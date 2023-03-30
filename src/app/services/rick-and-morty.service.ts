@@ -9,7 +9,7 @@ export class RickAndMortyService {
   httpOptions: any
   api_url = "https://rickandmortyapi.com/api"
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
     this.httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
@@ -28,3 +28,4 @@ export class RickAndMortyService {
     })
   }
 }
+

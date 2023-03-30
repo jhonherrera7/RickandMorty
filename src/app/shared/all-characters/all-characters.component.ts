@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
 import { RickAndMortyService } from '../../services/rick-and-morty.service';
 import { CharacterDetailComponent } from '../character-detail/character-detail.component';
+
 @Component({
   selector: 'app-all-characters',
   templateUrl: './all-characters.component.html',
@@ -10,11 +10,12 @@ import { CharacterDetailComponent } from '../character-detail/character-detail.c
 export class AllCharactersComponent implements OnInit {
 
   allCharacters: any;
+  modalController: any;
 
 
   constructor(
     private randmService: RickAndMortyService,
-    private modalController: ModalController
+
     ) { }
 
   ngOnInit() {
@@ -33,3 +34,4 @@ export class AllCharactersComponent implements OnInit {
    }
 
 }
+
